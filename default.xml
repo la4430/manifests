@@ -6,7 +6,7 @@
   
   <default remote="aosp" revision="refs/tags/android-4.0.3_r1" sync-j="4"/>
   
-  <project name="arm/ds5/gator" path="external/gator" remote="linaro-other" revision="476cf5043a3d3cf3f2a9b70bc16e5b00755c6964"/>
+  <project name="arm/ds5/gator" path="external/gator" remote="linaro-other" />
   <project name="boot/u-boot-linaro-stable" path="u-boot" remote="linaro-other" revision="a7aebf03597d9661ad0e5241c12e448e980800b4"/>
   <project name="device/common" revision="28b7cc7e41f9521a2e9e3b197ed2f750acc4cc15"/>
   <project name="device/generic/goldfish" revision="5feb8ecfd93c4e3c9eec89ab20dd143d05f7e91c"/>
