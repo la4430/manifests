@@ -12,6 +12,9 @@
            remote="aosp"
            sync-j="4" />
 
+  <remote  name="igloocommunity"
+           fetch="git://igloocommunity.org/" />
+
   <!-- External extras -->
   <project path="packages/apps/0xbench" name="platform/packages/apps/0xbench" revision="linaro-master" />
 
@@ -21,12 +24,13 @@
   <project path="hardware/linaro/common" name="hardware/linaro/common" revision="linaro_android_4.0.3" />
   <project path="device/linaro/common" name="device/linaro/common" revision="linaro_android_4.0.3" />
   <project path="device/linaro/pandaboard" name="device/linaro/pandaboard" revision="linaro_android_4.0.3" />
+  <project path="device/linaro/snowball" name="device/linaro/snowball" revision="linaro_android_4.0.3" remote="aosp" />
   <project path="external/busybox" name="platform/external/busybox" revision="linaro_android_4.0.3" />
   <project path="external/lrzsz" name="platform/external/lrzsz" revision="linaro-master" />
   <project path="external/x264" name="platform/external/x264" revision="linaro-master" />
   <project path="external/ffmpeg" name="platform/external/ffmpeg" revision="linaro-0.10" />
   <project path="external/speex" name="platform/external/speex" revision="linaro_mmwg" />
-  <project path="u-boot" name="boot/u-boot-linaro-stable" revision="master" remote="linaro-other" />
+  <project path="u-boot" name="git/boot/u-boot-ux500" revision="master" remote="igloocommunity" />
   <project path="external/gator" name="arm/ds5/gator" revision="android" remote="linaro-other" />
   <project path="packages/wallpapers/LinaroWallpaper" name="platform/packages/wallpapers/LinaroWallpaper" revision="master" />
   <project path="external/powertop" name="platform/external/powertop" revision="linaro"/>
@@ -34,7 +38,7 @@
   <project path="external/libnl" name="platform/external/libnl" revision="linaro"/>
   <!-- Make sure only one of the kernels is enabled! -->
   <!-- Linaro kernel -->
-  <project path="kernel" name="people/andygreen/repo-branch-archive" revision="tilt-android-tracking" remote="linaro-other" />
+  <project path="kernel" name="git/kernel/igloo-kernel" revision="stable-android-ux500-3.1" remote="igloocommunity" />
   <!-- AOSP kernel -->
   <!-- project path="kernel" name="kernel/omap" revision="android-omap-panda-3.0" -->
     <!-- We copy the defconfig over so we can use the same name as w/ the Linaro kernel -->
@@ -57,7 +61,7 @@
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" revision="linaro_android_4.0.3" />
   <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" revision="linaro_android_4.0.3" />
   <project path="system/vold" name="platform/system/vold"  revision="linaro_android_4.0.3"/>
-  <project path="bionic" name="platform/bionic" revision="linaro_android_4.0.3"/>
+  <project path="bionic" name="platform/bionic" revision="linaro_android_4.0.3" />
   <project path="external/srec" name="platform/external/srec" revision="linaro_android_4.0.3"/>
   <project path="external/stlport" name="platform/external/stlport" revision="linaro_android_4.0.3"/>
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" revision="linaro_android_4.0.3"/>
@@ -78,7 +82,6 @@
   <project name="people/afrantzis/glmark2" path="packages/apps/glmark2" remote="linaro-other" revision="members-meeting-demo"/>
   <project path="cts" name="platform/cts" revision="linaro_android_4.0.3" />
   <project path="external/gtest" name="platform/external/gtest" revision="linaro_android_4.0.3" />
-
 
   <!-- TI proprietary-open -->
   <project path="device/ti/proprietary-open" name="device/ti/proprietary-open" revision="ics" />
